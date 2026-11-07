@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Breakout</title>
+    <style>
+        body {
+            margin: 0;
+            background: #171c2c;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 30px;
+        }
+
+        #gameCanvas {
+            display: block;
+            width: min(95vw, 1000px);
+            height: auto;
+            margin: 0 auto;
+            background: #252d45;
+            border: 2px solid white;
+            box-sizing: border-box;
+        }
+
+        .info {
+            margin: 15px;
+            font-size: 18px;
+        }
+
+        button {
+            padding: 10px 25px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        a {
+            color: #8dbbff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CLASSIC BREAKOUT</h1>
+
+    <div class="info">
+        SCORE: <span id="score">0</span>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <div>
+        <button id="startButton">START / RESTART</button>
+    </div>
+
+    <p>マウスを左右に動かしてパドルを操作</p>
+
+    <a href="../../index.html" class="back-button">
+        ← BACK TO HOME
+    </a>
+
+    <script src="game.js"></script>
+</body>
+</html>
